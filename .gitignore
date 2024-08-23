@@ -2,6 +2,7 @@
 
 .vscode
 .vscode/*
+*.exe
 
 # --------------- Language-specific things ---------------
 
