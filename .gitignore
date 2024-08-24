@@ -2,7 +2,12 @@
 
 .vscode
 .vscode/*
-*.exe
+
+# --------------- Tooling-specific things ---------------
+
+build
+build/*
+CMakePresets.json
 
 # --------------- Language-specific things ---------------
 
