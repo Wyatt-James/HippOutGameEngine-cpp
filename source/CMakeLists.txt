@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30)
-project(HippOutGameEngine-cpp
+project(HippOutGameEngine
         VERSION 0.1.0
         DESCRIPTION "HippOutGameEngine in C/C++"
         HOMEPAGE_URL https://github.com/wyatt-James/hippOutGameEngine-cpp
@@ -24,6 +24,7 @@ add_library(engine SHARED ${ENGINE_SOURCES})
 target_include_directories(engine PUBLIC ${ENGINE_PUBLIC_INCLUDE})
 target_include_directories(engine PRIVATE ${ENGINE_PRIVATE_INCLUDE})
 set_target_properties(engine PROPERTIES LINKER_LANGUAGE CXX)
+set_target_properties(engine PROPERTIES OUTPUT_NAME ${PROJECT_NAME})
 
 # Test Game Configuration
 
